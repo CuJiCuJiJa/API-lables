@@ -5,6 +5,7 @@ namespace App\Listeners;
 use Illuminate\Auth\Events\Attempting;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use MikeMcLin\WpPassword\Facades\WpPassword;
 
 class WordPressPasswordUpdate
 {
