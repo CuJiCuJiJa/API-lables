@@ -161,7 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-
+        MikeMcLin\WpPassword\WpPasswordProvider::class,
         /*
          * Package Service Providers...
          */

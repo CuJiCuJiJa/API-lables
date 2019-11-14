@@ -18,11 +18,11 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->integer('score')->default(0);
-            $table->string('location');
-            $table->string('cv');
-            $table->string('bio');
-            $table->string('profile_picture');
-            $table->boolean('node');
+            $table->string('location')->nullable();
+            $table->string('cv')->nullable();
+            $table->string('bio')->nullable();
+            $table->string('profile_picture')->nullable();
+            $table->boolean('node')->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
