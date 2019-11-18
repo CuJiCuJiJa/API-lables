@@ -15,10 +15,11 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('score');
+            $table->string('title');
+            $table->integer('score')->default(0);
             $table->string('body');
             $table->timestamps();
-            //INSTALAR LIBRERIA SPATIE PARA RELACIONAR MEDIA AL POST
+            //INSTALAR LIBRERIA SPATIE PARA RELACIONAR MEDIA AL POST-
         });
     }
 
